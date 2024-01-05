@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zero foody</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500&display=swap" rel="stylesheet">
+    <style>
+        /* @import url('https://fonts.googleapis.com/css2?family=Baloo+2&display=swap'); */
+        body{
+            font-family: 'Baloo 2', sans-serif;
+            background-image:url(fd7.jpg);
+            background-repeat: no-repeat;
+            /* background-position: center;
+            background: fixed; */
+
+        }
+        body  .prizetagbox{
+            display: flex;
+            color: white;
+            /* font-family: 'Baloo 2', sans-serif; */
+        }
+       
+        .box1,.box2,.box3,.box4{
+            
+            width: 296px;
+            margin: 8px auto;
+
+            border: 1px solid rgb(195, 195, 211);
+            border-radius: 16px;
+        }
+        .prizeboximage{
+            display: block;
+            
+            width: 281px;
+    height: 170px;
+    margin: 8px auto;
+    /* border: 3px solid red; */
+    border-radius: 14px;
+        }
+       .prizetagbox span{
+            /* for padding occur in inline element at top */
+            display: inline-block; 
+            border: 1px solid rgb(189 199 190);
+    border-radius: 15px;
+    margin: 4px 16px;
+    padding: 5px;
+        }
+        .prizeboxh1{
+            font-size: 20px;
+        }
+        .readmore{
+            /* for padding occur  element at top */
+            display:block;
+            color: rgb(21, 6, 240);
+            border: 0px solid rgb(255, 255, 255);
+            background-color: rgba(225, 234, 243, 0.89);
+            border-radius: 18px;
+            margin: 6px auto;
+            
+            padding: 10px;
+        }
+        .prizeboxh1,.prizetagbox p{
+            padding: 10px;
+        }
+        nav{
+            position: sticky;
+            top:0px;
+            right:0px;
+            z-index: 1000;
+            /* ab scroll karonge to sab iske niche se jayenge  */
+        }
+       nav ul{
+            overflow: auto;
+            margin: 0px 0px;
+            background-color: rgb(0, 0, 0);
+            height: 74px;
+            width: 1064;
+            margin-top: -8px;
+            margin-left: -9px;
+        }
+       ul li{
+            float: left;
+            
+            /* border: 2px solid gray; */
+            margin: 19px 46px;
+            padding: 0px 0px;
+            display: flex;
+            /* width: 44px; */
+            font-size: 19px;
+        }
+        .navbar li a{
+            text-decoration: none;
+            color: rgb(255, 166, 0);
+        }
+        .navbar li a:hover{
+            text-decoration: underline;
+            text-decoration-thickness: 4px;
+            /* color: rgb(139, 6, 6); */
+            /* background-color: rgb(236, 232, 222); */
+            /* border-radius: 12px; */
+        }
+        .navbar img  {
+            float: left;
+            border-radius: 30px;
+            border: 4px solid red;
+            padding: auto;
+            margin: auto;
+            margin-top: 4px;
+            width: 61px;
+            height: 56px;
+        }
+        #search{
+    background-color: rgb(252, 252, 252);
+    border-radius: 19px;
+    float: right;
+    margin: 20px -55px;
+    padding: 7px 12px;
+    width: 167px;
+}
+.summit{
+            cursor: pointer;
+            float: right;
+    background-color: rgb(255, 166, 0);
+    margin: 21px 60px;
+    padding: 7px 14px;
+    border-radius: 17px;
+        }
+        .image{
+           width: 100%;
+           
+           
+        }
+        .para{
+            color: #ffffff;
+    border: 3px solid #a81313;
+    border-radius: 19px;
+    width: 444px;
+    height: auto;
+    position: absolute;
+    top: 330px;
+    font-size: 22px;
+    left: 165px;
+    padding: 17px;
+}
+@keyframes writeText{
+    from{
+        width: 0;
+    }
+    to{
+        width: 70%;
+    }
+}
+.welcome{
+    /* border: 4px solid red ; */
+    padding: 5px;
+    overflow: hidden;
+    white-space: nowrap;
+    animation: writeText 3s steps(400) infinite;
+    color: white;
+    position: absolute;
+    top: 167px;
+    font-size: 67px;
+    left: 82px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-shadow: 6px 0px 0px #d5d0c3;
+    
+}
+
+.smallwelcome{
+    /* font-size: .5em */
+    font-weight: 400;
+}
+
+.floatorder button{
+    cursor: pointer;
+    position: fixed;
+    bottom: 67px;
+    right: 11px;
+    background-color: rgb(223 231 255);
+    margin: 21px 60px;
+    padding: 12px;
+    color: blue;
+    border-radius: 30px;
+    font-size: 19px;
+    
+    
+}
+
+    </style>
+</head>
+<body>
+    <!-- <H1>Zero Foody</H1> -->
+    <nav class="navbar">
+        <ul>
+            <img class="logo" src="logofd.png" alt="ooo">
+            <li><a href="">Home</a></li>
+            <li><a href="">Foods</a></li>
+            <li><a href="">Track Order</a></li    >
+            <li><a href="">Location</a></li>
+            <li><a href="fdlogin.html">Log in</a></li>
+            <div class="search">
+                <button class="summit" type="submit">search</button>
+                <input type="search" name="search" id="search" placeholder="search in this web">
+
+            </div>
+        </ul>
+    </nav>
+    <div>
+        <img class="image" src="fd7.jpg" alt="noimg">
+        <div class="welcomebox">
+       <h1 class="welcome"><span class="smallwelcome">Welcome to</span> Zero Foody</h1>
+        </div>
+        <div class="greet">
+            
+            <p class="para"> Taste the magic of our speedy and delicious menu - from sizzling burgers to refreshing drinks. Quick, convenient, and full of flavor, it's the perfect place for a fast and fabulous feast</p>
+        </div>
+        <div class="floatorder">
+            <button  type="button"> Order Now</button>
+        </div>
+    </div>
+
+    <!-- prize tag -->
+    <div class="prizetagbox">
+    <div class="box1">
+        <img class="prizeboximage" src="fd3.jpg" alt="noneimage">
+        <span>Burger</span>
+        <span>₹650</span>
+        <h1 class="prizeboxh1">Lago di Braies</h1>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur ae consectetur, eveniet impedit esse aut illo velit rem, quibusdam nobis quae suscipit labore expedita?
+        </p>
+        <button class="readmore" type="button">Order Now</button>
+    </div>
+    <div class="box2">
+        <img class="prizeboximage" src="fd5.jpg" alt="noneimage">
+        <span>Pizza</span>
+        <span>₹70</span>
+        <h1 class="prizeboxh1">Lago di Braies</h1>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur ae consectetur, eveniet impedit esse aut illo velit rem, quibusdam nobis quae suscipit labore expedita?
+        </p>
+        <button class="readmore" type="button">Order Now</button>
+    </div>
+    <div class="box3">
+        <img class="prizeboximage" src="fd4.jpg" alt="noneimage">
+        <span>Pestie</span>
+        <span>₹45</span>
+        <h1 class="prizeboxh1">Lago di Braies</h1>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur ae consectetur, eveniet impedit esse aut illo velit rem, quibusdam nobis quae suscipit labore expedita?
+        </p>
+        <button class="readmore" type="button">Order Now</button>
+    </div>
+    <div class="box4">
+        <img class="prizeboximage" src="fd6.jpg" alt="noneimage">
+        <span>Veg Role</span>
+        <span>₹50</span>
+        <h1 class="prizeboxh1">Lago di Braies</h1>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur ae consectetur, eveniet impedit esse aut illo velit rem, quibusdam nobis quae suscipit labore expedita?
+        </p>
+        <button class="readmore" type="button">Order Now</button>
+    </div>
+    </div>
+</body>
+</html>

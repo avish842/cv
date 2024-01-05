@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Login Page</title>
+	<style>
+		body {
+			font-family: Arial, sans-serif;
+			background-image: linear-gradient(to right,#c153e5 ,#262cdf);
+		}
+		.lpage{
+			color: white;
+			font-size: 45px;
+		}
+		form {
+            border-radius: 13px;
+			background-color: #ffffff;
+			border: 1px solid #cccccc;
+			padding: 20px;
+			width: 400px;
+			margin: 0 auto;
+			margin-top: 50px;
+			box-shadow: 0 0 10px #cccccc;
+		}
+		input[type=text], input[type=password] {
+			padding: 10px;
+			margin: 10px 0;
+			border: none;
+			border-radius: 3px;
+			background-color: #f1f1f1;
+			width: 100%;
+		}
+		input[type=submit] {
+			background-color: #4CAF50;
+			color: #ffffff;
+			border: none;
+			padding: 10px 20px;
+			border-radius: 3px;
+			cursor: pointer;
+			float: right;
+		}
+		input[type=submit]:hover {
+			background-color: #3e8e41;
+		}
+		h1 {
+			text-align: center;
+			margin-top: 0;
+		}
+		.error {
+			color: #ff0000;
+			font-size: 0.8em;
+		}
+	</style>
+	<script>
+		function validate() {
+			var username = document.getElementById("username").value;
+			var password = document.getElementById("password").value;
+			var error = document.getElementById("error");
+			if (username == "") {
+				error.innerHTML = "Please enter your username";
+				return false;
+			}
+			if (password == "") {
+				error.innerHTML = "Please enter your password";
+				return false;
+			}
+			return true;
+		}
+		
+	</script>
+</head>
+<body>
+    <h1 class="lpage">Aman Electronics</h1>
+	<form onsubmit="return validate()">
+		<h1>Login</h1>
+		<div>
+			<label for="username">Username</label>
+			<input type="text" id="username" name="username">
+		</div>
+		<div>
+			<label for="password">Password</label>
+			<input type="password" id="password" name="password">
+		</div>
+		<div>
+			<input type="submit" value="Login">
+			<span id="error" class="error"></span>
+		</div>
+	</form>
+</body>
+</html>

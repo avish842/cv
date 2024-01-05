@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            height: 80vh;
+            border: 2px solid black;
+            display: grid;
+            /* number of column and their width */
+            /* fr = fraction and 1fr means 1times fraction fr=widht/total column */
+             grid-template-columns:/* 1fr 2fr 1fr; or repeat(3,1fr)*/
+             repeat(3,44px);
+            
+            /* number of rows and their height */
+            grid-template-rows: 70px 120px 100px;
+            gap: 44px;
+            row-gap: 13px;
+            column-gap: 20px;
+            /* items apne cell ke within align honge */
+            /* yadi cell ke ander items ko align karna hai to justify-items aur ydi puri grid ko container ke ander align karna hai to justify-conent (same for align) */
+            justify-items: center;
+            align-items: center;
+            justify-content: center;
+            align-content: center;
+            /* place-content: center; 
+    place-items: center; */
+
+            
+
+
+        }
+        .item{
+            width: 45px;
+            height: 44px;
+            border: 2px solid red;
+        }
+       .item4{
+        justify-self: start;
+            grid-row: 1/2;
+            grid-column: 1/2;
+        }
+       /* .item1{
+            grid-row: 1/2;
+            grid-column: 1/2;
+        } */
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item item1">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item item4">4</div>
+        <div class="item">5</div>
+        <div class="item">5</div>
+        <div class="item">5</div>
+        <div class="item">5</div>
+    </div>
+</body>
+</html>

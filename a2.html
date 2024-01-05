@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alam coaching center </title>
+</head>
+<body>
+    <h1>ALAM coaching center </h1> 
+    <form action="bankend.php">
+        <strong>
+            <div>
+              <label for="myname">Name :</label>
+              <input type="text"  class="name" id="myname" autofocus>
+            </div>
+          </strong>
+          <br>
+          <strong>
+              <div>
+                 class: <input type="number"  class="class" id="myclass" pattern="0-9">
+              </div>
+            </strong>
+            <br>
+            <strong>
+              <div>
+                 Emal: <input type="email"  class="email" id="myemail">
+              </div>
+            </strong><br>
+            <strong>
+              <div>
+                 D.O.B: <input type="date"  class="dob" id="mydob">
+              </div>
+            </strong><br>
+            <strong>
+              <div>
+                 mob: <input type="number"  class="mob" id="mymob">
+              </div>
+            </strong>
+            <br>
+            <strong>
+              <div>
+                Gender:- male<input type="radio"  name="gender" value="male"> female<input type="radio" name="gender" value="female"> other<input type="radio" name="gender" >
+              </div>
+            </strong>
+            <br>
+            <strong>
+              <div>
+                  <label for="id">id:-</label>
+                 <select name="myid" id="id">
+                  <option value="addhar card" selected>addhar card</option>
+                  <option value="pan card">Pan card</option>
+                  <option value="voter id">voter id</option>
+                  <option value="other">Other</option>
+                 </select>
+              </div>
+            </strong>
+            <br>
+            <strong>
+              <div>
+                 id number: <input type="number"  class="idnum" id="myidnum">
+              </div>
+            </strong>
+            <br>
+            <strong>
+              <div>
+                Subject:- physics: <input type="radio"  class="phy" id="physics"> chemistry: <input type="radio" class="che" id="mychem"> math  : <input type="radio" class="math" id="mymath"> english  : <input type="radio" class="eng" id="myeng">
+              </div>
+            </strong>
+            <br>
+            <strong>
+              <div>
+                  write about yourself:- <br> <textarea name="text" cols="30" rows="10"></textarea>
+              </div>
+            </strong>
+            <br>
+            <div>
+              <label for="dec">above data is correct from my side -</label>
+              <input type="checkbox" id="dec">
+            </div>
+            <div>
+                <input type="reset" value="reset Now">
+                <input type="submit" value="submit now">
+                
+          </div>
+    </form>
+</body>

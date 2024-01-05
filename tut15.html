@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selector</title>
+    <style>
+        /* Element selector */
+        p{
+            border: 2px solid rgb(217, 16, 16);
+        }
+        /* Id Selector */
+        #firstPara{
+            color: rgb(243, 223, 4);
+            background-color: rgb(183, 122, 234);
+        }
+        /* Class Selector */
+        .redElement{
+            color: rgb(15, 17, 54);
+            background-color: rgb(85, 222, 85);
+        }
+        /* Grouping selector */
+        footer,span{
+            background-color: lightgreen;
+        }
+        /* pseudo selector */
+        a:visited{
+            color: blue;
+        }
+        a:link{
+            color: green;
+
+        }
+        a:hover{
+            color: violet;
+        }
+        /* child selector */
+        div>a{
+            color: cadetblue;
+        }
+
+    </style>
+</head>
+<body>
+    <h3>CSS Selector</h3>
+    <p id="firstPara">This is a simple paragraph to demonstrate css selectors</p>
+    <p id="second para " class="redElement bgBlue">This is a another paragraph to demontrate css selectors</p>
+    <div>
+    <p>This  is yet another simple paragraph inside div to demontrates css selectors</p>
+    <span>This is span </span>
+    </div>
+    <div><a href="https//www.google.com">Go to Goggle </a></div>
+    <footer>This is footer </footer>
+
+    
+</body>
+</html>

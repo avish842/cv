@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="this is the page which contans discription about adarsh  ((pahale iska use web ko SEO me rank karne ke liye ))">
+    <title>Forms</title>
+</head>
+
+<body>
+    <h2>ADARSH VISHWAKARMA</h2>
+    <form action="backend.php">
+        <!-- X,Y k alag alag line me lkhane ke liye div ka upyog kiya jata hai  -->
+        <div>
+            <STRONG> <label for="name"
+                    style="COLOR:rgb(47, 29, 209); background-color: rgb(160, 250, 230);">Name:</label> </STRONG>
+            <!-- label ka uyoge karne se name ke uper bhi click karenge to select ho jayega -->
+             <input type="text" name="myName" id="name"  autofocus> <!--autofocus ka use karne se reload arne par bhi carser ispe rahe ga {isi tarah yadi required dalenge to to wah mwndetory hoga,}-->
+            
+        </div>
+        <br>
+        <div>
+            <!-- type = number likhogeb to keval number enter kar sakte hai  -->
+            Class : <input type="number" name="myClass" pattern="0-9">
+        </div>
+        <br>
+        <!-- name wah naaam hai jisse backend iss tag ko pahachanta hai  -->
+        <div>
+            Email : <input type="email" name="myEmail">
+        </div>
+        <br>
+        <div>
+            Date : <input type="date" name="myDate">
+        </div>
+
+        <br>
+        <div>
+            <!-- type = radio likhane aur name same hone se only 1 select hoge in all  -->
+            Gender : Male <input type="radio" name="myGender"> Female <input type="radio" name="myGender">
+            Other: <input type="radio" name="myGender">
+        </div>
+        <br>
+        <div>
+            Write about yourself : <br> <textarea name="myText " cols="30" rows="10"></textarea>
+        </div>
+        <br>
+        <div>
+            <label for="Id">Id :</label>
+            <select name="myId" id="Id">
+                <option value="Aadhar card" selected>Aadhar card</option>
+                <option value="Pan card">Pan card</option>
+                <option value="voter id">Voter id</option>
+            </select>
+
+        </div>
+        <br>
+        <div>
+            Id No. : <input type="number" name="myIdno" id="">
+        </div>
+        <br>
+        <div>
+            <!-- type = checkbox likhoge to chekbox ayega and last me checked lkhane per pahele se checked rahega use unckeck ker sakte hai   -->
+            Above details provided by me is correct : <input type="checkbox" name="myEligibility" checked>
+        </div>
+        <br>
+        <div>
+            <input type="reset" value="Reset Now">
+            <input type="submit" value="Submit Now">
+        </div>
+    </form>
+
+</body>
+
+</html>

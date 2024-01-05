@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>List and Table
+    </title>
+</head>
+
+<body>
+    <!-- to make lists  -->
+    <!-- type = circle,dics,squere ker sakte hai  -->
+    <ul type="circle">
+        <li>This is first item of my unordered list</li>
+        <!-- list ke ander bhi list bana sakte hai  -->
+        <ul type="squere">
+            <li>Another one</li>
+            <li>Another two</li>
+        </ul>
+        <li>This is second item of my unordered list </li>
+        <li>this is third item of my unordered list </li>
+    </ul>
+    <!-- type = 1,a,A,i(small roman no.),I(capital roman no.) likh sakte hai  -->
+    <ol type="a">
+        <li>This is first item of my order list</li>
+        <li>This is second item of my order list</li>
+        <li>This is third item of my order list</li>
+    </ol>
+    <!-- to make TABLE  -->
+    <h3>HTML TABLE </h3>
+    <table>
+        <!-- HEADING add karne ke liye thead -->
+        <thead>
+            <!-- use ek row me likhane ke liye <tr></tr> -->
+            <tr>
+                <!-- heding  -->
+                <th> NAME </th>
+                <th> SURNAME </th>
+                <th> VILLAGE </th>
+
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <!-- data add  -->
+                <td> ABHINAV </td>
+                <td> YADAV </td>
+                <td> NAVBASTA  </td>
+            </tr>
+            <tr>
+                <td> ADRASH </td>
+                <td> VISHWAKARMA </td>
+                <td> SARAIYA  </td>
+            </tr>
+            <tr>
+                <td> YOGENDRA </td>
+                <td colspan="2"> YADAV </td> <!-- colspan="2" ka matalab hai ye 2 colum ki jagah gherega -->
+                <td> </td>
+            </tr>
+            <tr>
+                <td> waqar </td>
+                <td rowspan="2"> husain </td> <!-- rowspan="2" ka matalab hai ye 2 row ki jagah gherega -->
+                <td> </td>
+            </tr>
+            <thead>
+                <th> NAME </th>
+                <th> ROLL NO </th>
+                <th> BRANCH </th>
+                <th> YEAR  </th>
+            </thead>
+            <tr>
+                <td>adarsh </td>
+                <td colspan="2">232132</td>
+                <td  rowspan="2">it</td>
+                
+            </tr>
+            <tr>
+                <td>adarsh </td>
+                <td></td>
+                <td>hii</td>
+                
+                
+            </tr>
+        </tbody>
+    </table>
+    <header></header>
+    <body>
+    </body>
+     <footer></footer><!--header footer and body ka use grouping ke liye kiye jata hai -->
+</body>
+
+</html>

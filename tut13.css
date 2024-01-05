@@ -1,0 +1,27 @@
+h3{
+    color: red;
+    background-color: black;
+}
+
+#tokaisehoaaplog{
+    float: left;
+    font-size: 17px;
+    color: green;
+    background-color: pink;
+    font-style: italic;
+    display: table;
+    margin: 0px;
+    padding: 2px;
+   
+
+}
+#bhai{
+    float: left;
+    font-size: 17px;
+    color:green;
+    background-color:pink;
+    font-style: italic;
+    display: table;
+    margin-left: 50px;
+    padding: 2px;
+}

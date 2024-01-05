@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            border: 2px solid black;
+            
+            height: 80vh;
+            display:flex;
+            justify-content: center; /* content horizontaly centre hogyega (if flex direction is row ) */
+            /* vertiCally center ho jayega and sigle lineke liye  use hoti hai(if flex direction is row )  */
+            /* align-items: center; */
+            /* align content used for miltiple line */
+            align-content: center;
+            /* flex wrap is used to wrap content i.e content flow na hokar wrap ho jata hai */
+            /* flex-wrap: wrap; */
+            flex-flow: row wrap; /*ek hi baar me flex direction and flex wrap set kar sakte hai*/
+            gap: 10px;
+            /* gap:content ke beech kA Gap*/
+            row-gap: 4px ;
+            /* row ke beech ka gap */
+            column-gap:6px;
+            /* column vise content ke beech ka gap */
+        }
+        .items{
+            flex-grow: 1; 
+            flex-shrink: 1;
+            margin: 4px;
+            border: 2px solid rgb(69, 6, 128);
+            width: 94px;
+            height: 94px;
+            background-color: rgb(141, 219, 14);
+        }
+        .box1{
+            order: 1;
+            flex-grow: 2;
+            align-self: flex-start;
+        }
+        .box2{
+            order: 2;
+            flex-shrink: 3;
+        }
+        .box3{
+            order: 3;
+        }
+        .box4{
+            order: 4;
+        }
+        .box5{
+            order: 5;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="items box1">1</div>
+        <div class="items box2">2</div>
+        <div class="items box3">3</div>
+        <div class="items box4">4</div>
+        <div class="items box5">5</div>
+        <div class="items box6">6</div>
+        <div class="items box7">7</div>
+        <div class="items">8</div>
+        <div class="items">9</div>
+        <div class="items">10</div>
+        
+        
+        
+    </div>
+    
+</body>
+</html>

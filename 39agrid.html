@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            justify-content: center;
+            align-content: center;
+            border: 2px solid black;
+            display: grid;
+            /* number of column and their width */
+            /* naam bhi badal sakte hai */
+            grid-template-columns: [pehla]100px [dusara]120px [theesara]122px; 
+            /* number of rows and their height */
+            grid-template-rows: 70px 120px 100px;
+            height: 100vh;
+
+        }
+        .item{
+            text-align: center;
+            /* width: 45px;
+            height: 44px; */
+            border: 2px solid rgba(214, 38, 38, 0.925);
+        }
+       .item4{
+            /* grid-row: 1/3; */
+            /* or you can write  */
+            grid-row-start: 1;
+            grid-row-end: 3;
+
+            /* grid-column: 1/dusara;  */
+            /* or */
+            grid-column: pehla/dusara;
+            /* apne aap naam bhi rakh sakte hai */
+        }
+       .item1{
+            grid-row: 1/2;
+            grid-column: 1/3;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div style="background-color: rgba(0, 128, 0, 0.76);" class="item item1">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div style="background-color: rgba(71, 186, 214, 0.479);" class="item item4">4</div>
+        <div class="item">5</div>
+        <div class="item">6</div>
+    </div>
+</body>
+</html>
