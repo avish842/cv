@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500&display=swap" rel="stylesheet">
+    <title>login page</title>
+    <style>
+            body{
+        font-family: 'Baloo 2',Arial, sans-serif;
+        /* font-family: sans-serif; */
+        margin: 0;
+        background-color: rgb(0, 0, 0);
+}
+    nav{
+        margin: 0;
+        padding: 0;
+    }
+    
+    ul{
+        margin: 0;
+        display:flex;
+        list-style: none;
+        border: 1px solid rgb(0, 0, 0);
+    }
+    #list1{
+        border-top-right-radius: 5px;
+        border-top-left-radius: 5px;
+        background-color: #333;
+        height: 100px;
+        justify-content: center;
+        align-items: center;
+
+    }
+    .logo{
+        width: 84px;
+        height: 84px;
+        padding-right: 12px;
+    }
+   
+    #list2{
+        padding: 10px 0px;
+        justify-content: center;
+        background-color: #444;
+    }
+    #list2 a{
+        color: white;
+        padding: 4px 5px;
+        border-radius: 5px;
+        margin: 0px 34px;
+        text-decoration: none;
+    }
+    #list2 a:hover{
+        background-color: #222222;
+    }
+    .search{
+        border: 1px solid black;
+        padding: 10px;
+        margin: 0px;
+    }
+    #searchbox{
+        padding-left: 177px;
+        border-top-left-radius: 23px;
+        border-bottom-left-radius: 23px;
+        font-size: 19px;
+    }
+    #searchbutton{
+        font-size: 19px;  
+        border-top-right-radius: 5px;
+        border-bottom-right-radius: 5px;
+        color: white;
+        background-color: black;
+        
+    }
+    #list1 h1{
+        font-size: 45px;
+        color: white;
+    }
+    .ploginbox{
+        /* border: 2px solid blueviolet; */
+        height: 75vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        /* position: centre centre; */
+        
+    }
+    a{
+        text-decoration: none;
+        color: rgb(255, 245, 245);
+    }
+    .loginbox{
+        box-shadow: 0 0 100px rgb(73, 69, 69);
+        border: 2px solid black;
+        width: 23em;
+        height:23em;
+        display: grid;
+        border-radius: 14px;
+        background-color: #222;
+        /* flex-direction: row; */
+        grid-template-columns: 1fr;
+        grid-template-rows: 2fr 1fr 1fr .6fr 1fr ;
+        justify-content: center;
+    }
+    
+    .loginitems{
+        /* background-color: green; */
+        /* border: 2px solid red; */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .ltext{
+      
+        padding: 11px 50px;
+        border-radius: 4px;
+        font-size:19px ;
+        background:#333;
+        border: none;
+    }
+    .loginitems span{
+        padding: 0px 49px;
+        /* margin: 0px 50px; */
+        
+    }
+    .lbutton{
+        cursor: pointer;
+        color: rgb(0, 0, 0);
+        border: none;
+        font-size: 24px;
+        background-color: #4caf50;
+        border-radius: 6px;
+        padding: 6px 140px;
+        margin: 0px;
+        font-weight: bold;
+    }
+    .lbutton a{
+        color: black;
+    }
+    #signin,#signup{
+        color: rgb(11, 189, 11);
+
+    }
+   
+
+   
+    
+    </style>
+</head>
+<body>
+    
+<header>
+    <nav>
+        
+        
+            <ul class="list" id ="list1">
+                <li><img class="logo" src="https://cdn0.iconfinder.com/data/icons/social-messaging-ui-color-and-lines-1/2/26-512.png" alt=""></li>
+
+                    <li><H1>Avish Book Store</H1></li>
+                    <!-- <li><input type="search " class="search" id="searchbox" placeholder="search books"></li>
+                    <li><button class="search" id="searchbutton">Search</button></li> -->
+            </ul>
+            <!-- <hr> -->
+            <ul class="list" id="list2">
+                <li><a href="bookstore.html">Home</a></li>
+                <li><a href="biodata.html">Biodata</a></li>
+                <li><a href="catalogue.html">Catalog</a></li>
+                <li><a href="cart.html">Cart</a></li>
+                
+            </ul>
+
+    </nav>
+</header>
+<div class="ploginbox">
+    <div class="loginbox">
+        <div class="loginitems" id="signin"><h1>Registration page</h1></div>
+        <div class="loginitems">
+            <input  class="ltext" type="text" placeholder="Name">
+        </div>
+        <div class="loginitems">
+        <input class="ltext" type="email" placeholder="Enter your Email">
+        </div>
+        <div class="loginitems">
+        <input class="ltext" type="text" placeholder="Enter password">
+        </div>
+        <div class="loginitems" id="login" >
+            <a href="bookstore.html"><button class="lbutton">Save</button></a>
+        </div>
+       
+    </div>
+</div>
+
+</body>
+</html>

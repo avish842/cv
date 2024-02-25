@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>alc</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <style>
+        body {
+            background-image: url('My project.png');
+            font-family: 'Roboto', sans-serif;
+        }
+
+        .h1 {
+            margin: 3px 4px;
+            padding: 3px 4px;
+            text-align: center;
+            font-size: 45px;
+            color: beige;
+        }
+
+        header {
+            /* border: 3px solid rgb(138, 44, 44); */
+            border-radius: 23px;
+            overflow: auto;
+            background-color: rgb(251, 253, 251);
+        }
+
+        header li {
+            float: left;
+            margin: -3px 51px;
+            /* margin-bottom:16px; */
+            padding: 3px 3px;
+            /* border: 2px solid blue; */
+            /* background-color: rgb(176, 224, 176); */
+        }
+
+        header li a {
+            color: #3203c1;
+            text-decoration: none;
+            font-size: 18px;
+        }
+
+        header li :hover {
+            color: rgb(0, 255, 106);
+            /* background-color: rgb(227, 241, 25); */
+
+        }
+
+        .logo {
+            margin-top: -12px;
+            margin-bottom: 3px;
+            /* margin: 3px 4px ;
+            padding: 3px 4px ; */
+            width: 49px;
+            float: left;
+        }
+
+        .box {
+            border-radius: 11px;
+            display: inline-block;
+            text-align: center;
+            width: 383px;
+            height: 390px;
+            /* border: 3px solid black; */
+            background-color: #b30a96;
+            font-family: 'Roboto', sans-serif;
+            margin: 69px 175px;
+            padding: 0px 0px;
+        }
+
+        .text {
+            border-radius: 11px;
+            margin: 2px 2px;
+            padding: 3px 3px;
+            font-size: 20px;
+            text-align: center;
+        }
+
+        .option {
+            border-radius: 11px;
+            margin: 2px 2px;
+            padding: 3px 3px;
+            font-size: 18px;
+            text-align: center;
+        }
+
+        .btn {
+            border-color:transparent;
+            font-size: 16px;
+            margin: 10px 0px;
+            padding: 7px 4px;
+            color: #fffafa;
+            background-color: #700f78;
+            border-radius: 11px;
+
+        }
+        .join{
+            color: white;
+        }
+        #search {
+            float: right;
+            padding: 1px 6px;
+            border-color: white;
+            border-radius: 15px;}
+    </style>
+</head>
+
+<body>
+    <h1 class="h1">Alam Coaching Center</h1>
+    <header class="container">
+        <ul type="none" class="list">
+            <img src="logo.png"
+                alt="none" class="logo">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Teachers</a></li>
+            <li><a href="#">Classes</a></li>
+            <li><a href="#">Contacts</a></li>
+            <li><a href="#">location</a></li>
+        </ul>
+        <input type="text" name="search" id="search" placeholder="search this website">
+    </header>
+    <!-- <img src="My project.png" alt="none"> -->
+    <form action="bakend.php">
+        <div class="box">
+            <h1 class="join">Join us</h1>
+            <div>
+                <input type="text" placeholder="Your Name" class="text">
+            </div>
+            <div>
+                <input type="tel" placeholder="Mobile No." class="text" >
+            </div>
+            <div>
+                <input type="email" placeholder="Enter Email" class="text">
+            </div>
+            <div>
+                <input type="text" placeholder="your address" class="text">
+            </div>
+            <div>
+                <input type="number" placeholder="your class" class="text">
+            </div>
+            <div>
+                Select your Id:<select name="myId" id="Id" class="option">
+                    <option value="Aadhar card">Aadhar card</option>
+                    <option value="Pan card">Pan card</option>
+                    <option value="voter id">Voter id</option>
+                </select>
+            </div>
+            <div>
+                Gender:<select name="myGender" id="Gender" class="option">
+                    <option value="Male">Male</option>
+                    <option value="Female">Female</option>
+                    <option value="Other">Other</option>
+                </select>
+            </div>
+            <div>
+                <input type="reset" value="Reset Now" class="btn">
+                <input type="submit" value="Submit Now" class="btn">
+            </div>
+
+        </div>
+    </form>
+
+</body>
+
+</html>

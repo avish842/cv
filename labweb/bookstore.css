@@ -1,0 +1,40 @@
+body{
+    font-family: 'Baloo 2', sans-serif;
+}
+nav{
+    margin: 0;
+    padding: 0;
+}
+nav div{
+    border: 2px solid blue;
+}
+ul {
+    border: 2px solid black;
+    /* display: inline-block; */
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+}
+ul1{
+    border: 2px solid black;
+    /* display: inline-block; */
+    display: flex;
+    list-style: none;
+    /* justify-content: space-between; */
+    padding-right: 34px;
+}
+li1{
+    border: none;
+
+    /* padding: 40px;
+    padding-right: 97px; */
+}
+.search{
+    font-size: 19px;
+    padding: 13px;
+}
+ li a{
+    color: rgb(10, 10, 10);
+    text-decoration: none;
+    border: 2px solid red;
+}

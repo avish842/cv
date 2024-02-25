@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500&display=swap" rel="stylesheet">
+    <title>College Form</title>
+    <style>
+        body{
+            font-family: 'Baloo 2', sans-serif;
+            font-size: 18px;
+            background-color: rgb(248, 213, 248);
+        }
+        h1 {text-align:center;}
+        img{
+            display:block;
+            margin-left:auto;
+            margin-right:auto;
+        }
+        input{
+            background-color: rgb(247, 242, 177);
+            margin: 4px;
+            border-radius: 4px;
+            border: 2px solid black;
+            padding: 8px;
+        }
+    </style>
+</head>
+<body>
+<header>
+    <h1>NIT Kurukshetra Admission Form</h1>
+    <marquee>
+        <h2><u><i>Welcome to NIT Admission Process</i></u></h2>
+    </marquee>
+    <img width="250" src="https://upload.wikimedia.org/wikipedia/en/7/75/National_Institute_of_Technology%2C_Kurukshetra_Logo.png" alt="">
+ ><h3><b>Enter the details below for further admission process:</b></h3>
+    <hr>
+</header>
+    <form>
+        <div>
+        <input type="text" placeholder="Enter your name"><br>
+        <input type="text" placeholder="Enter age"><br>
+        <input type="text" placeholder="Course"><br>
+        <input type="text" placeholder="Branch"><br>
+        </div>
+        <h5>Choose section:-</h5>
+        <div>
+        <label for="sectionid">
+            <input type="radio" value="Section a" name="section" id="sectionid">SectionA
+            <input type="radio" value="Section a" name="section" id="sectionid">SectionB
+            <input type="radio" value="Section a" name="section" id="sectionid">SectionC
+        </label>
+        <br>
+        </div>
+        <h5>Choose gender:-</h5>
+        <div>
+            <label for="sectionid a">
+                <input type="radio" value="male" name="sex" id="sectionid a">Male
+                <input type="radio" value="female" name="sex" id="sectionid a">Female
+                <input type="radio" value="other" name="sex" id="sectionid a">Other
+        </div>
+        <div>
+        <h5>Enter your quota:-</h5>
+        <select name="quota" id="quota">
+            <option value="General" selected>General</option>
+            <option value="PWD">PWD</option>
+            <option value="SC/ST">SC/ST</option>
+            <option value="OBC">OBC-NCL</option>
+        </select>
+        <br>
+        </div>
+        <div>
+            <h5>Upload Documents:-</h5>
+        <input type="file" id="myfile" name="filename">
+        </div><br>
+        <input type="submit"><br><br>
+        <div>
+            <textarea name="feedback" id="feedback" cols="30" rows="10">Reason to join NIT Kurukshetra(optional)</textarea>
+        </div>
+        <h3>Click th video below for campus tour &darr;</h3>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/8O1fontgHyk?si=Lm3sUyTD5TUbKjoN" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        <div>
+        <a href="/table.html" target="_blank"><h2>Last year Placement 
+        Records</h2></a>
+        </div>
+    </form>
+    <hr>
+    <a href="https://nitkkr.ac.in">Visit for Help</a>
+</body>
+</html>

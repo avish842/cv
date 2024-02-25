@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zero Foody</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Baloo 2', sans-serif;
+            background-color: #f5f5f5; /* Light background color */
+            margin: 0;
+            padding: 0;
+        }
+
+        nav {
+            background-color: #333; /* Dark background color for the navigation bar */
+            padding: 15px 0;
+            text-align: center;
+        }
+
+        .navbar li {
+            display: inline-block;
+            margin: 0 20px;
+            font-size: 18px;
+            list-style: none;
+        }
+
+        .navbar a {
+            text-decoration: none;
+            color: #fff; /* White text color for navigation links */
+        }
+
+        .navbar a:hover {
+            text-decoration: underline;
+        }
+
+        .welcome {
+            font-size: 3em; /* Increase font size for welcome text */
+            color: #333; /* Darker text color for better readability */
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        .greet .para {
+            color: #555; /* Slightly darker text color */
+            text-align: center;
+            margin: 20px 0;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .floatorder {
+            text-align: center;
+            margin-top: 30px;
+        }
+
+        .floatorder button {
+            cursor: pointer;
+            background-color: #ffcc00; /* Yellow button color */
+            padding: 15px 30px;
+            font-size: 1.2em;
+            color: #333; /* Dark text color */
+            border: none;
+            border-radius: 30px;
+            transition: background-color 0.3s;
+        }
+
+        .floatorder button:hover {
+            background-color: #e6b800; /* Darker yellow on hover */
+        }
+
+        /* Prize tag box styling */
+        .prizetagbox {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            margin: 50px auto;
+        }
+
+        .prizebox {
+            width: 300px;
+            margin: 20px;
+            padding: 20px;
+            border: 2px solid #ddd; /* Light border color */
+            border-radius: 15px;
+            background-color: #fff; /* White background color */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Subtle box shadow */
+            transition: transform 0.3s;
+        }
+
+        .prizebox:hover {
+            transform: scale(1.05); /* Increase size on hover */
+        }
+
+        .prizebox img {
+            width: 100%;
+            border-radius: 10px;
+            margin-bottom: 15px;
+        }
+
+        .prizetagbox span {
+            display: inline-block;
+            margin-bottom: 10px;
+        }
+
+        .prizeboxh1 {
+            font-size: 1.5em;
+            margin-bottom: 10px;
+        }
+
+        .prizebox p {
+            margin-bottom: 15px;
+        }
+
+        .readmore {
+            display: block;
+            color: #fff;
+            background-color: #333; /* Dark background color for the button */
+            border: none;
+            border-radius: 5px;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            transition: background-color 0.3s;
+        }
+
+        .readmore:hover {
+            background-color: #555; /* Darker background color on hover */
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Foods</a></li>
+            <li><a href="#">Track Order</a></li>
+            <li><a href="#">Location</a></li>
+            <li><a href="fdlogin.html">Log in</a></li>
+        </ul>
+    </nav>
+
+    <div>
+        <img class="image" src="fd7.jpg" alt="noimg">
+        <div class="welcomebox">
+            <h1 class="welcome"><span class="smallwelcome">Welcome to</span> Zero Foody</h1>
+        </div>
+        <div class="greet">
+            <p class="para">Taste the magic of our speedy and delicious menu - from sizzling burgers to refreshing drinks. Quick, convenient, and full of flavor, it's the perfect place for a fast and fabulous feast</p>
+        </div>
+        <div class="floatorder">
+            <button type="button">Order Now</button>
+        </div>
+    </div>
+
+    <!-- Prize tag box -->
+    <div class="prizetagbox">
+        <div class="prizebox">
+            <img src="fd3.jpg" alt="Burger Image">
+            <span>Burger</span>
+            <span>₹650</span>
+            <h1 class="prizeboxh1">Lago di Braies</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <a class="readmore" href="#">Order Now</a>
+        </div>
+        <div class="prizebox">
+            <img src="fd5.jpg" alt="Pizza Image">
+            <span>Pizza</span>
+            <span>₹70</span>
+            <h1 class="prizeboxh1">Lago di Braies</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <a class="readmore" href="#">Order Now</a>
+        </div>
+        <div class="prizebox">
+            <img src="fd4.jpg" alt="Pestie Image">
+            <span>Pestie</span>
+            <span>₹45</span>
+            <h1 class="prizeboxh1">Lago di Braies</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <a class="readmore" href="#">Order Now</a>
+        </div>
+        <div class="prizebox">
+            <img src="fd6.jpg" alt="Veg Role Image">
+            <span>Veg Role</span>
+            <span>₹50</span>
+            <h1 class="prizeboxh1">Lago di Braies</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <a class="readmore" href="#">Order Now</a>
+        </div>
+        <!-- Add similar prizebox divs for other items -->
+    </div>
+</body>
+</html>

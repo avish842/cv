@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3D Hexacopter Body</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <style>
+        body { margin: 0; }
+        canvas { display: block; }
+    </style>
+</head>
+<body>
+    <script>
+        // Initialize Three.js
+        const scene = new THREE.Scene();
+        const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
+        const renderer = new THREE.WebGLRenderer();
+
+        renderer.setSize(window.innerWidth, window.innerHeight);
+        document.body.appendChild(renderer.domElement);
+
+        // Create hexacopter body (cylinder)
+        const bodyGeometry = new THREE.CylinderGeometry(1, 1, 2, 6);
+        const bodyMaterial = new THREE.MeshStandardMaterial({ color: 0x00ff00 });
+        const hexacopterBody = new THREE.Mesh(bodyGeometry, bodyMaterial);
+        scene.add(hexacopterBody);
+
+        // Position the camera
+        camera.position.z = 5;
+
+        // Create an animation loop
+        const animate = function () {
+            requestAnimationFrame(animate);
+
+            // Rotate the hexacopter body (if needed)
+            hexacopterBody.rotation.x += 0.01;
+            hexacopterBody.rotation.y += 0.01;
+
+            // Render the scene
+            renderer.render(scene, camera);
+        };
+
+        // Run the animation loop
+        animate();
+    </script>
+</body>
+</html>

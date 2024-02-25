@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bookstore</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500&display=swap" rel="stylesheet">
+<style>
+    body{
+        font-family: 'Baloo 2', sans-serif;
+        margin: 0;
+}
+    nav{
+        
+        /* z-index: 4555; */
+        margin: 0;
+        padding: 0;
+    }
+    header{
+        background-color: white;
+        position: sticky;
+            top:0px;
+            right:0px;
+            z-index: 1000;
+        /* z-index: 23; */
+        margin: 0;
+        padding: 0;
+    }
+    ul{
+        margin: 0;
+        
+        display:flex;
+        list-style: none;
+        border: 1px solid rgb(0, 0, 0);
+    }
+    #list1{
+        background-color: azure;
+        height: 100px;
+        justify-content: center;
+        align-items: center;
+
+    }
+    #list1 h1{
+        margin-right: 129px;
+    }
+    #list2{
+        
+        justify-content: center;
+        background-color: #4b4545;
+    }
+    #list2 a{
+        color: white;
+        padding: 34px;
+        text-decoration: none;
+    }
+    .search{
+        border: 1px solid black;
+        padding: 10px;
+        margin: 0px;
+    }
+    #searchbox{
+        padding-left: 177px;
+        border-top-left-radius: 23px;
+        border-bottom-left-radius: 23px;
+        font-size: 19px;
+    }
+    #searchbutton{
+        font-size: 19px;  
+        border-top-right-radius: 5px;
+        border-bottom-right-radius: 5px;
+        color: white;
+        background-color: black;
+        
+    }
+    #list1 h1{
+        font-size: 45px;
+    }
+    .mid{
+        /* width: 100vw;
+        position: absolute;
+        top: 0px;
+        bottom:0px; */
+
+    }
+    .mid .midimg{
+        /* z-index: 1; */
+        width: 100vw;
+    }
+    
+    .prizetagbox{
+            /* z-index: 3;
+            position: absolute;
+            top: 40px; */
+            display: flex;
+            flex-wrap: wrap;
+            color: rgb(0, 0, 0);
+            /* font-family: 'Baloo 2', sans-serif; */
+        }
+       
+        .box1,.box2,.box3,.box4{
+            
+            width: 296px;
+            margin: 8px auto;
+
+            border: 1px solid rgb(195, 195, 211);
+            border-radius: 16px;
+            /* background-color: white; */
+        }
+        .prizeboximage{
+            display: block;
+            
+            width: 281px;
+    height: 170px;
+    margin: 8px auto;
+    /* border: 3px solid red; */
+    border-radius: 14px;
+        }
+       .prizetagbox span{
+            /* for padding occur in inline element at top */
+            display: inline-block; 
+            border: 1px solid rgb(189 199 190);
+    border-radius: 15px;
+    margin: 4px 16px;
+    padding: 5px;
+    /* background-color: white; */
+        }
+        .prizeboxh1{
+            font-size: 20px;
+        }
+        .readmore{
+            /* for padding occur  element at top */
+            display:block;
+            color: rgb(21, 6, 240);
+            border: 0px solid rgb(255, 255, 255);
+            background-color: rgba(225, 234, 243, 0.89);
+            border-radius: 18px;
+            margin: 6px auto;
+            
+            padding: 10px;
+        }
+        .prizeboxh1,.prizetagbox p{
+            padding: 10px;
+        }
+
+</style>
+</head>
+<body>
+<header>
+    <nav>
+        
+        
+            <ul class="list" id ="list1">
+                    <li><H1>AVISH BOOK STORE</H1></li>
+                    <li><input type="search " class="search" id="searchbox" placeholder="search books"></li>
+                    <li><button class="search" id="searchbutton">Search</button></li>
+            </ul>
+            <!-- <hr> -->
+            <ul class="list" id="list2">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Biodata</a></li>
+                <li><a href="#">catalog</a></li>
+                <li><a href="#">cart</a></li>
+                <li><a href="#">login</a></li>
+            </ul>
+
+    </nav>
+</header>
+<div class="mid">
+    <img class="midimg" src="https://img.freepik.com/free-vector/cartoon-bookstore-interior-with-books-shelves_107791-20532.jpg?w=996&t=st=1708759716~exp=1708760316~hmac=14d62c28f4aee9d73dfd9edc515ffdecc4be7e7bb20af6c006649e7a7133ae3d" alt="">
+    <div class="prizetagbox">
+        <div class="box1">
+            <img class="prizeboximage" src="fd3.jpg" alt="noneimage">
+            <span>Burger</span>
+            <span>₹650</span>
+            <h1 class="prizeboxh1">Lago di Braies</h1>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur ae consectetur, eveniet impedit esse aut illo velit rem, quibusdam nobis quae suscipit labore expedita?
+            </p>
+            <button class="readmore" type="button">Order Now</button>
+        </div>
+        <div class="box2">
+            <img class="prizeboximage" src="fd5.jpg" alt="noneimage">
+            <span>Pizza</span>
+            <span>₹70</span>
+            <h1 class="prizeboxh1">Lago di Braies</h1>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur ae consectetur, eveniet impedit esse aut illo velit rem, quibusdam nobis quae suscipit labore expedita?
+            </p>
+            <button class="readmore" type="button">Order Now</button>
+        </div>
+        <div class="box3">
+            <img class="prizeboximage" src="fd4.jpg" alt="noneimage">
+            <span>Pestie</span>
+            <span>₹45</span>
+            <h1 class="prizeboxh1">Lago di Braies</h1>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur ae consectetur, eveniet impedit esse aut illo velit rem, quibusdam nobis quae suscipit labore expedita?
+            </p>
+            <button class="readmore" type="button">Order Now</button>
+        </div>
+        <div class="box4">
+            <img class="prizeboximage" src="fd6.jpg" alt="noneimage">
+            <span>Veg Role</span>
+            <span>₹50</span>
+            <h1 class="prizeboxh1">Lago di Braies</h1>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur ae consectetur, eveniet impedit esse aut illo velit rem, quibusdam nobis quae suscipit labore expedita?
+            </p>
+            <button class="readmore" type="button">Order Now</button>
+        </div>
+        </div>
+</div>
+<hr>
+    <footer>
+        <div>
+
+        </div>
+
+    </footer>
+    
+</body>
+</html>

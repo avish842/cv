@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500&display=swap" rel="stylesheet">
+    <title>login page</title>
+    <style>
+            body{
+        font-family: 'Baloo 2',Arial, sans-serif;
+        /* font-family: sans-serif; */
+        margin: 0;
+        background-color: rgb(0, 0, 0);
+}
+    nav{
+        margin: 0;
+        padding: 0;
+    }
+    
+    ul{
+        margin: 0;
+        display:flex;
+        list-style: none;
+        border: 1px solid rgb(0, 0, 0);
+    }
+    #list1{
+        border-top-right-radius: 5px;
+        border-top-left-radius: 5px;
+        background-color: #333;
+        height: 100px;
+        justify-content: center;
+        align-items: center;
+
+    }
+    .logo{
+        width: 84px;
+        height: 84px;
+        padding-right: 12px;
+    }
+   
+    #list2{
+        padding: 10px 0px;
+        justify-content: center;
+        background-color: #444;
+    }
+    #list2 a{
+        color: white;
+        padding: 4px 5px;
+        border-radius: 5px;
+        margin: 0px 34px;
+        text-decoration: none;
+    }
+    #list2 a:hover{
+        background-color: #222222;
+    }
+    .search{
+        border: 1px solid black;
+        padding: 10px;
+        margin: 0px;
+    }
+    #searchbox{
+        padding-left: 177px;
+        border-top-left-radius: 23px;
+        border-bottom-left-radius: 23px;
+        font-size: 19px;
+    }
+    #searchbutton{
+        font-size: 19px;  
+        border-top-right-radius: 5px;
+        border-bottom-right-radius: 5px;
+        color: white;
+        background-color: black;
+        
+    }
+    #list1 h1{
+        font-size: 45px;
+        color: white;
+    }
+    .cart{
+        color: red;
+    }
+   
+
+   
+    
+    </style>
+</head>
+<body>
+    
+<header>
+    <nav>
+        
+        
+            <ul class="list" id ="list1">
+                <li><img class="logo" src="https://cdn0.iconfinder.com/data/icons/social-messaging-ui-color-and-lines-1/2/26-512.png" alt=""></li>
+
+                    <li><H1>Avish Book Store</H1></li>
+            </ul>
+            
+            <ul class="list" id="list2">
+                <li><a href="bookstore.html">Home</a></li>
+                <li><a href="biodata.html">Biodata</a></li>
+                <li><a href="catalogue.html">Catalog</a></li>
+                <li><a href="cart.html">Cart</a></li>
+                
+            </ul>
+
+    </nav>
+</header>
+<div class="cart">
+    <h1>No added items</h1>
+</div>
+
+</body>
+</html>

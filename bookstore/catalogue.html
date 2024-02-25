@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bookstore</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500&display=swap" rel="stylesheet">
+<style>
+    body{
+        font-family: 'Baloo 2', sans-serif;
+        margin: 0;
+}
+    nav{
+        
+        /* z-index: 4555; */
+        margin: 0;
+        padding: 0;
+    }
+    header{
+        background-color: white;
+        position: sticky;
+            top:0px;
+            right:0px;
+            z-index: 1000;
+        /* z-index: 23; */
+        margin: 0;
+        padding: 0;
+    }
+    ul{
+        margin: 0;
+        box-shadow: 0 0 100 rgb(219, 32, 32);
+
+        display:flex;
+        list-style: none;
+        border: 1px solid rgb(0, 0, 0);
+    }
+    #list1{
+        color: white;
+        background-color: #333;
+        height: 100px;
+        justify-content: center;
+        align-items: center;
+
+
+    }
+    #list1 h1{
+        margin-right: 129px;
+        /* border: 1px solid red; */
+        box-shadow: 0 0 34 rgb(156, 5, 5);
+    }
+    .logo{
+        width: 84px;
+        height: 84px;
+        padding-right: 12px;
+    }
+    /* .heading{
+        background-color: #333;
+
+    } */
+    #list2{
+        
+        justify-content: center;
+        background-color: #444;
+        padding: 10px 0px;
+    }
+    #list2 a{
+        color: white;
+        padding: 0px 5px;
+        border-radius: 5px;
+        margin: 0px 34px;
+        text-decoration: none;
+    }
+    #list2 a:hover{
+        background-color: #222222;
+    }
+    .search{
+        /* border: 1px solid black; */
+    
+        padding: 10px;
+        margin: 0px;
+    }
+    #searchbox{
+        border: none;
+        padding-left: 177px;
+        border-top-left-radius: 23px;
+        border-bottom-left-radius: 23px;
+        font-size: 19px;
+    }
+    #searchbutton{
+        border: none;
+        font-size: 19px;  
+        border-top-right-radius: 5px;
+        border-bottom-right-radius: 5px;
+        color: white;
+        background-color: rgb(92, 206, 77);
+        cursor: pointer;
+        
+    }
+    #searchbutton:hover{
+      background-color:rgb(59, 133, 50) ;
+    }
+    #list1 h1{
+    text-shadow: 0 0 100 rgb(0, 0, .2);
+        font-size: 45px;
+        
+    }
+    .mid{
+        width: 100vw;
+        /* display: flex;
+        justify-content: center; */
+    }
+   
+    
+    .prizetagbox{
+        width: 100vw;
+            z-index: 3;
+            top: 288px;
+            /* left: 150px; */
+            display: flex;
+            justify-content: space-between;
+            /* height: auto; */
+            flex-wrap: wrap;
+            color: rgb(0, 0, 0);
+            /* font-family: 'Baloo 2', sans-serif; */
+        }
+       
+        .box1,.box2,.box3,.box4{
+            box-shadow: 0 0 100px rgba(0,0,0 ,1);
+            background-color: rgba(226, 231, 236, 0.89);
+            width: 250px;
+            margin: 8px auto;
+            height: auto;
+
+            border: 1px solid rgb(3, 3, 19);
+            border-radius: 16px;
+            /* background-color: white; */
+        }
+        .prizeboximage{
+            display: block;
+            
+            /* width: 281px; */
+    height: 190px;
+    margin: 8px auto;
+    /* border: 3px solid red; */
+    border-radius: 14px;
+        }
+       .prizetagbox span{
+            /* for padding occur in inline element at top */
+            display: inline-block; 
+            border: 1px solid rgb(189 199 190);
+    border-radius: 15px;
+    margin: 4px 16px;
+    padding: 5px;
+    background-color: white;
+        }
+        .prizeboxh1{
+            font-size: 20px;
+        }
+        .readmore a{
+            text-decoration: none;
+            color: black;
+        }
+        .readmore:hover{
+            background-color: rgb(58, 173, 63);
+
+        }
+        .readmore{
+            /* for padding occur  element at top */
+            display:block;
+            color: rgb(0, 0, 0);
+            border: 0px solid rgb(255, 255, 255);
+            background-color: rgb(65, 218, 73);
+            border-radius: 18px;
+            margin: 6px auto;
+            padding: 10px;
+            font-size: 16px;
+            font-weight:bolder;
+        }
+        .prizeboxh1,.prizetagbox p{
+            padding: 10px;
+            margin: 0;
+        }
+        .strike{
+            color: red;
+            font-style: italic;
+
+        }
+.category{
+    /* display: block; */
+    text-align: center;
+}
+
+</style>
+</head>
+<body>
+<header>
+    <nav>
+            <ul class="list" id ="list1">
+                <li><img class="logo" src="https://cdn0.iconfinder.com/data/icons/social-messaging-ui-color-and-lines-1/2/26-512.png" alt=""></li>
+
+                    <li class="heading"><H1>AVISH BOOK STORE</H1></li>
+                    <li><input type="search " class="search" id="searchbox" placeholder="Search Your Favourite books"></li>
+                    <li><button type="submit" class="search" id="searchbutton">Search</button></li>
+            </ul>
+            <!-- <hr> -->
+            <ul class="list" id="list2">
+                <li><a href="bookstore.html">Home</a></li>
+                <li><a href="catalogue.html">Catalogue</a></li>
+                <li><a href="cart.html">Cart</a></li>
+                <li><a href="blogin.html">Login</a></li>
+            </ul>
+
+    </nav>
+</header>
+<div class="mid">
+   <div class="category"> <h1>Inspiring</h1></div>
+    <div class="prizetagbox">
+        <div class="box1">
+            <img class="prizeboximage" src="https://m.media-amazon.com/images/I/51IZ+V-g73L._SY445_SX342_.jpg" alt="noneimage">
+            <h1 class="prizeboxh1">Innovators </h1>
+            <span><a href="#">Add to Cart</a></span>
+            <span>₹599 <strike class="strike">₹799</strike></span>
+            <p>
+
+            </p>
+            <button class="readmore" type="button"><a href="#">Lets Gain knowledge</a></button>
+        </div>
+        <div class="box2">
+            <img class="prizeboximage" src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c4/TheAlchemist.jpg/220px-TheAlchemist.jpg" alt="noneimage">
+            <h1 class="prizeboxh1">The Alchemist</h1>
+            <span><a href="#">Add to Cart</a></span>
+            <span>₹299 <strike class="strike">₹599</strike></span>
+            <p>
+
+            </p>
+            <button class="readmore" type="button"><a href="#">Lets Gain knowledge</a></button>
+        </div>
+        <div class="box3">
+            <img class="prizeboximage" src="https://m.media-amazon.com/images/I/51zfocvB-AL._SY445_SX342_.jpg" alt="noneimage">
+            <h1 class="prizeboxh1">Who moved my cheese ?</h1>
+            <span><a href="#">Add to Cart</a></span>
+            <span>₹239 <strike class="strike">₹299</strike></span>
+            <p>
+            </p>
+            <button class="readmore" type="button"><a href="#">Lets Gain knowledge</a></button>
+        </div>
+        <div class="box4">
+            <img class="prizeboximage" src="https://books.google.co.in/books/publisher/content?id=B3PgDwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&imgtk=AFLRE70OvKXNQnCXWCuQik4JknCIK_P_dtQ1Hj7-k3XjGCZEVk6tFG1x83bHwmZ3QsMrRsFTM-8M2E3jLKzhb2Ym25F46HPax9TvYYV9FBh9_vBhmZM6pR49rjotIxiyPJV37KqsxE1q" alt="noneimage">
+            <h1 class="prizeboxh1">Atomic Habits</h1>
+            <span><a href="#">Add to Cart</a></span>
+            <span>₹299 <strike class="strike">₹399</strike></span>
+            <p>
+            </p>
+            <button class="readmore" type="button"><a href="#">Lets Gain knowledge</a></button>
+        </div>
+        <div class="box4">
+            <img class="prizeboximage" src="https://books.google.co.in/books/publisher/content?id=l3wnDQAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&imgtk=AFLRE73vJCgosXDLxtCm0jMu1KjPtCH08LQHNj3OBHg4MHJkGJDPcE_rghWIN_A2R8Kz4f4YFjW5sZ8rlPLumuTHFlsmtO7bTNSIw8azj-ZEXYZXgiQdIUKPaRE1Kg9UakxPezxGl_R_" alt="noneimage">
+            <h1 class="prizeboxh1">when breath becomes air</h1>
+            <span><a href="#">Add to Cart</a></span>
+            <span>₹279 <strike class="strike">₹475</strike></span>
+            <p>
+            </p>
+            <button class="readmore" type="button"><a href="#">Lets Gain knowledge</a></button>
+        </div>
+        
+    
+    </div>
+</div>
+<div class="category"> <h1>Science</h1></div>
+<div class="prizetagbox">
+    <div class="box1">
+        <img class="prizeboximage" src="https://m.media-amazon.com/images/I/51IZ+V-g73L._SY445_SX342_.jpg" alt="noneimage">
+        <h1 class="prizeboxh1">Innovators </h1>
+        <span><a href="#">Add to Cart</a></span>
+        <span>Free <strike class="strike">₹799</strike></span>
+        <p>
+
+        </p>
+        <button class="readmore" type="button"><a href="#">Lets Gain knowledge</a></button>
+    </div>
+    <div class="box2">
+        <img class="prizeboximage" src="https://i.pinimg.com/736x/6b/9c/26/6b9c2669f522fef954c8bffbc3ce342b.jpg" alt="noneimage">
+        <h1 class="prizeboxh1">BHAGAVAD GITA</h1>
+        <span><a href="#">Add to Cart</a></span>
+        <span>Free <strike class="strike">₹599</strike></span>
+        <p>
+
+        </p>
+        <button class="readmore" type="button"><a href="#">Lets Gain knowledge</a></button>
+    </div>
+    <div class="box3">
+        <img class="prizeboximage" src="https://m.media-amazon.com/images/I/51zfocvB-AL._SY445_SX342_.jpg" alt="noneimage">
+        <h1 class="prizeboxh1">Who moved my cheese ?</h1>
+        <span><a href="#">Add to Cart</a></span>
+        <span>Free <strike class="strike">₹299</strike></span>
+        <p>
+        </p>
+        <button class="readmore" type="button"><a href="#">Lets Gain knowledge</a></button>
+    </div>
+    <div class="box4">
+        <img class="prizeboximage" src="https://rukminim2.flixcart.com/image/416/416/book/0/8/1/a-history-of-the-sikhs-volume-1-original-imae62q8zuw8ze7r.jpeg?q=70&crop=false" alt="noneimage">
+        <h1 class="prizeboxh1">A history of SIKHS</h1>
+        <span><a href="#">Add to Cart</a></span>
+        <span>Free <strike class="strike">₹475</strike></span>
+        <p>
+        </p>
+        <button class="readmore" type="button"><a href="#">Lets Gain knowledge</a></button>
+    </div>
+    <div class="box4">
+        <img class="prizeboximage" src="https://rukminim2.flixcart.com/image/416/416/book/0/8/1/a-history-of-the-sikhs-volume-1-original-imae62q8zuw8ze7r.jpeg?q=70&crop=false" alt="noneimage">
+        <h1 class="prizeboxh1">A history of SIKHS</h1>
+        <span><a href="#">Add to Cart</a></span>
+        <span>Free <strike class="strike">₹475</strike></span>
+        <p>
+        </p>
+        <button class="readmore" type="button"><a href="#">Lets Gain knowledge</a></button>
+    </div>
+    
+
+</div>
+<div class="category"> <h1>Spiritual</h1></div>
+<div class="prizetagbox">
+    <div class="box1">
+        <img class="prizeboximage" src="https://rukminim2.flixcart.com/image/416/416/kdlzte80/regionalbooks/f/t/m/shri-ramcharitrmanas-ramayan-extra-large-fornt-by-goswami-original-imafuhbfrnqfds3h.jpeg?q=70&crop=false" alt="noneimage">
+        <h1 class="prizeboxh1">Ramayana </h1>
+        <span><a href="#">Add to Cart</a></span>
+        <span>₹999 <strike class="strike">₹1199</strike></span>
+        <p>
+
+        </p>
+        <button class="readmore" type="button"><a href="#">Lets Gain knowledge</a></button>
+    </div>
+    <div class="box2">
+        <img class="prizeboximage" src="https://i.pinimg.com/736x/6b/9c/26/6b9c2669f522fef954c8bffbc3ce342b.jpg" alt="noneimage">
+        <h1 class="prizeboxh1">BHAGAVAD GITA</h1>
+        <span><a href="#">Add to Cart</a></span>
+        <span>Free <strike class="strike">₹599</strike></span>
+        <p>
+
+        </p>
+        <button class="readmore" type="button"><a href="#">Lets Gain knowledge</a></button>
+    </div>
+    <div class="box3">
+        <img class="prizeboximage" src="https://www.prachiindia.com/ModuleFiles/Items/b340-2022.png" alt="noneimage">
+        <h1 class="prizeboxh1">Mahabharata</h1>
+        <span><a href="#">Add to Cart</a></span>
+        <span>₹799<strike class="strike">₹1099</strike></span>
+        <p>
+        </p>
+        <button class="readmore" type="button"><a href="#">Lets Gain knowledge</a></button>
+    </div>
+    <div class="box4">
+        <img class="prizeboximage" src="https://rukminim2.flixcart.com/image/416/416/book/0/8/1/a-history-of-the-sikhs-volume-1-original-imae62q8zuw8ze7r.jpeg?q=70&crop=false" alt="noneimage">
+        <h1 class="prizeboxh1">A history of SIKHS</h1>
+        <span><a href="#">Add to Cart</a></span>
+        <span>Free <strike class="strike">₹475</strike></span>
+        <p>
+        </p>
+        <button class="readmore" type="button"><a href="#">Lets Gain knowledge</a></button>
+    </div>
+    <div class="box4">
+        <img class="prizeboximage" src="https://rukminim2.flixcart.com/image/416/416/book/0/8/1/a-history-of-the-sikhs-volume-1-original-imae62q8zuw8ze7r.jpeg?q=70&crop=false" alt="noneimage">
+        <h1 class="prizeboxh1">A history of SIKHS</h1>
+        <span><a href="#">Add to Cart</a></span>
+        <span>Free <strike class="strike">₹475</strike></span>
+        <p>
+        </p>
+        <button class="readmore" type="button"><a href="#">Lets Gain knowledge</a></button>
+    </div>
+    
+
+</div>
+
+<hr>
+    <footer>
+        <div class="footerbox">
+
+
+
+        </div>
+
+    </footer>
+    
+</body>
+</html>

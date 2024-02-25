@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <title>HEllo world</title>
+    <style>
+        body{
+            font-family: 'Roboto', sans-serif;
+            background-color: black;
+        }
+        nav{
+        margin: 0;
+        padding: 0;
+    }
+    
+    ul{
+        margin: 0;
+        display:flex;
+        list-style: none;
+        border: 1px solid rgb(0, 0, 0);
+    }
+    #list1{
+        border-top-right-radius: 5px;
+        border-top-left-radius: 5px;
+        background-color: #333;
+        height: 100px;
+        justify-content: center;
+        align-items: center;
+
+    }
+    .logo{
+        width: 84px;
+        height: 84px;
+        padding-right: 12px;
+    }
+   
+    #list2{
+        padding: 10px 0px;
+        justify-content: center;
+        background-color: #444;
+    }
+    #list2 a{
+        color: white;
+        padding: 4px 5px;
+        border-radius: 5px;
+        margin: 0px 34px;
+        text-decoration: none;
+    }
+    #list2 a:hover{
+        background-color: #222222;
+    }
+    .search{
+        border: 1px solid black;
+        padding: 10px;
+        margin: 0px;
+    }
+    #searchbox{
+        padding-left: 177px;
+        border-top-left-radius: 23px;
+        border-bottom-left-radius: 23px;
+        font-size: 19px;
+    }
+    #searchbutton{
+        font-size: 19px;  
+        border-top-right-radius: 5px;
+        border-bottom-right-radius: 5px;
+        color: white;
+        background-color: black;
+        
+    }
+    #list1 h1{
+        font-size: 45px;
+        color: white;
+    }
+        .container{
+            width: 100vw;
+            display: flex;
+            /* align-items: center; */
+            justify-content: center;
+        }
+        #card{
+            box-shadow: 0 0 100px rgb(82, 82, 82);
+            margin:4px;
+            border-radius: 10px;
+            width: 430px;
+            height:430;
+            border: none;
+            background-color: #333;
+            flex-direction: column;
+            display: flex;
+            align-items: center;
+            /* justify-content: space-between; */
+        }
+
+        .box{
+            background-color: rgb(50, 65, 63);
+        }
+        .tag{
+            color: rgb(8, 219, 8);
+            margin-bottom: 10px;
+            background: none;
+        }
+        .para{
+            display: flex;
+            align-items: center;
+            margin: 10px;
+            padding: 5px;
+            /* border: 2px  rgb(190, 17, 17); */
+            border-radius: 8px;
+            border-style: dashed;
+            
+        }
+        div img{
+            margin: 10px;
+            border-radius: 23px;
+        /* border: 2px solid red; */
+            width: 111px;
+            height: 111px;
+        }
+        /* .logo{
+            
+        } */
+        .form{
+            color: rgb(211, 224, 211);
+            background-color: rgb(73, 68, 68);
+            display: grid;
+            grid-template-rows: auto auto auto auto auto;
+            grid-template-columns: auto auto;
+            /* padding: auto;
+            margin: auto; */
+            /* border: 2px solid rgb(151, 151, 226);
+             */
+             border-radius: 12px;
+            row-gap: auto;
+            /* column-gap:auto; */
+            /* display: flex; */
+            /* flex-direction: column; */
+            /* justify-self: start; */
+            /* display: flex;*/
+            /* flex-direction: ;  */
+        }
+        .form div{
+            font-size: 18px;
+            padding: 6px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            
+            
+                <ul class="list" id ="list1">
+                    <li><img class="logo" src="https://cdn0.iconfinder.com/data/icons/social-messaging-ui-color-and-lines-1/2/26-512.png" alt=""></li>
+    
+                        <li><H1>Avish Book Store</H1></li>
+                        <!-- <li><input type="search " class="search" id="searchbox" placeholder="search books"></li>
+                        <li><button class="search" id="searchbutton">Search</button></li> -->
+                </ul>
+                <!-- <hr> -->
+                <ul class="list" id="list2">
+                    <li><a href="bookstore.html">Home</a></li>
+                    <li><a href="biodata.html">Biodata</a></li>
+                    <li><a href="catalogue.html">Catalog</a></li>
+                    <li><a href="cart.html">Cart</a></li>
+                    
+                </ul>
+    
+        </nav>
+    </header>
+    <!-- <marquee> -->
+    <div class="container">
+        <div id="card">
+            <div class="tag box"><h1>Student Biodata</h1></div>
+            <div class="logokkr"><img src="adarsh123103104.jpg" alt="none"></div>
+            <div class="form">
+                <div>
+                    Name:
+                </div>
+                <div>
+                    Adarsh Vishwakarma
+                </div>
+               
+               <div>
+                 Roll No. :
+               </div> 
+               <div>
+                  123103104
+    
+               </div>
+               <div>Branch :</div>
+               <div>
+                   Information technology
+                </div>
+               <div>Mob. :</div>
+               <div>
+                   8922865205
+               </div>
+               <div>Hobby :</div>
+               <div>Sports & Tech</div>
+            </div>
+            
+            
+            <div class="para box"><marquee behavior="" direction=""><h4 style="color: red; display: inline;">Disclamer :</h5> This Website is coded by Adarsh Vishwakarama </marquee>.</div>
+            
+        </div>
+    </div>
+    
+</body>
+</html>

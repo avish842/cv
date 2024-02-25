@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <title>HEllo world</title>
+    <style>
+        body{
+            font-family: 'Roboto', sans-serif;
+        }
+        #card{
+            margin:4px;
+            border-radius: 10px;
+            width: 430px;
+            height: auto;
+            border: 2px solid blue;
+            background-color: rgb(224, 224, 222);
+            flex-direction: column;
+            display: flex;
+            align-items: center;
+            /* justify-content: space-between; */
+        }
+
+        .box{
+            background-color: rgb(238, 255, 253);
+        }
+        .tag{
+            /* border: 1px solid rgb(0, 0, 0); */
+            /* background-color: rgb(255, 255, 255); */
+            margin-bottom: 10px;
+            /* padding: 14px; */
+            background: none;
+        }
+        .para{
+            display: flex;
+            align-items: center;
+            margin: 10px;
+            padding: 5px;
+            /* border: 2px  rgb(190, 17, 17); */
+            border-radius: 8px;
+            border-style: dashed;
+            
+        }
+        div img{
+            margin: 10px;
+            border-radius: 0px;
+        /* border: 2px solid red; */
+            width: 150px;
+            height: 150px;
+        }
+        .logo{
+            
+        }
+        .form{
+            background-color: white;
+            display: grid;
+            grid-template-rows: auto auto auto auto auto;
+            grid-template-columns: auto auto;
+            /* padding: auto;
+            margin: auto; */
+            /* border: 2px solid rgb(151, 151, 226);
+             */
+             border-radius: 12px;
+            row-gap: auto;
+            /* column-gap:auto; */
+            /* display: flex; */
+            /* flex-direction: column; */
+            /* justify-self: start; */
+            /* display: flex;*/
+            /* flex-direction: ;  */
+        }
+        .form div{
+            font-size: 18px;
+            padding: 6px;
+        }
+    </style>
+</head>
+<body>
+    <!-- <marquee> -->
+    <div id="card">
+        <div class="logo"><img src="https://www.nssnitkkr.com/img/Logo_White_1.png" alt=""></div>
+        <div class="tag box"><h1>NIT KURUKSHETRA</h1></div>
+        <div class="form">
+            <div>
+                Name:
+            </div>
+            <div>
+                 <input type="text" placeholder="Enter your name ">
+            </div>
+           
+           <div>
+             Roll No. :
+           </div> 
+           <div>
+               <input type="text" placeholder="Enter your Roll no. ">
+
+           </div>
+           <div>Branch :</div>
+           <div>
+               <select name="" id="">
+                   <option value="">Computer science</option>
+                   <option value="">Information technology</option>
+                <option value="">Electrical Engineering</option>
+                <option value="">Mechanical Engineering</option>
+                <option value="">Civil Engineering</option>
+                <option value="">Mechanical Engineering</option>
+                 <option value="">Electronics and communication</option>
+                 <option value="">Artificial intelligence</option>
+                 <option value="">PI</option>
+                  <option value="">IIOT</option>
+               </select>
+        </div>
+           <div>Mob. :</div>
+           <div>
+                <input type="text" placeholder="Enter your name ">
+           </div>
+           <div><button type="reset" value="reset">Reset Now</button></div>
+           <div><button type="submit">Submit</button></div>
+        </div>
+        
+        
+        <div class="para box"><marquee behavior="" direction=""><h4 style="color: red; display: inline;">Disclamer :</h5> Fill the correct information  i.e  Enter your name as per aadhar , Brach,and mobile number should be link with addhar</marquee>.</div>
+        
+            </div>
+    
+</body>
+</html>
